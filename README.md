@@ -7,3 +7,4 @@ Para comenzar con este sistema uso claude, pero en este caso la IA , no es invas
 
 Como generalmente el back lo hago en otra tecnologia la cual ya tengo clara, utilizaremos una API llamada https://dummyjson.com/ , la cual viene completa y me sirve para practicar la creacion de sistemas de gestion.
 
+
