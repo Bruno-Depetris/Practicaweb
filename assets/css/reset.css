@@ -8,14 +8,6 @@
 
 }
 
-h1,/*Titulo debe ir uno solo por pagina */
-h2,/*sub titulo*/
-h3,/*titulo 3*/
-h4,/* titulo 4*/
-p {/*parrafo  */
-    text-align: left; /*para escribir de izquierda a derecha */
-}
-
 ul,/* es una lista */
 ol {/* cada elemento de una lista */
     list-style: none; /* Para sacarle el estilo de la lista */

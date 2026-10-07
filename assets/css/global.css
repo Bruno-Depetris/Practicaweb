@@ -2,12 +2,10 @@ body {
     font-family: var(--fuente-principal);
     background: var(--color-background-primario);
     color: var(--color-font-primario);
-    margin: 0;
 }
 
 #app {
-    max-width: 800px;
-    margin: 0 auto;              /* centra #app horizontalmente */
+    max-width: var(--ancho-maximo-contenido);
     padding: var(--espacio-4);
-    text-align: center;
+
 }   
