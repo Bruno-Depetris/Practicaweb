@@ -1,0 +1,14 @@
+:root {
+    --color-background-primario: #eff0f2;
+    --color-font-primario: #1a1a1a;
+    --color-background-secundario: #2b8beb;
+    --rem-border: 0.5rem;
+
+    --direccion: row;
+    --alineacion: center;
+    --distribucion: space-between;
+
+
+    --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
