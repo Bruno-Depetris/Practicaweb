@@ -1,31 +1,41 @@
-* {
-    margin: 0;
-    padding: 0;
+* { /*El * selecciona todos los elementos, todos los tags */
+    margin: 0; /*quita los margenes que el navegador define por defecto */
+    padding: 0; /* quitan el padding por defecto */
     box-sizing: border-box;
+    /*Hace que el width que ponga incluya
+     padding y border, en vez de que se sumen por fuera.*/
 
 
 }
 
-body {
-    margin: 0;
+h1,/*Titulo debe ir uno solo por pagina */
+h2,/*sub titulo*/
+h3,/*titulo 3*/
+h4,/* titulo 4*/
+p {/*parrafo  */
+    text-align: left; /*para escribir de izquierda a derecha */
 }
 
-h1,
-h2,
-h3,
-h4,
-p {
-    margin: 0;
+ul,/* es una lista */
+ol {/* cada elemento de una lista */
+    list-style: none; /* Para sacarle el estilo de la lista */
 }
 
-ul,
-ol {
-    list-style: none;
+button,/* botones */
+input,/*elementos de ingreso de datos como un textbox */
+textarea,/* areas de texto */
+select {/*Selector */
+    font: inherit; /*que hace que el elemento herede todas 
+    las propiedades de fuente del padre Porque algunos elementos no 
+    heredan la fuente por defecto, como button, input, select y textarea. */
 }
+img{/* Imagen */
+    max-width: 100% ;
+    height: auto;
+    /* max-width: 100% y height: auto para garantizar que la imagen se
+     escale proporcionalmente sin exceder el ancho de su contenedor ni 
+     perder su relación de aspecto.   */
+    border: none; /* para sacar los bordes  */
 
-button,
-input,
-textarea,
-select {
-    font: inherit;
+    
 }
