@@ -1,11 +1,11 @@
 body {
     font-family: var(--fuente-principal);
-    background: var(--color-background-primario);
-    color: var(--color-font-primario);
+    background: var(--color-fondo-primario);
+    color: var(--color-texto-primario);
 }
 
 #app {
     max-width: var(--ancho-maximo-contenido);
     padding: var(--espacio-4);
-
+    margin-inline: auto;
 }   

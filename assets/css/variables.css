@@ -1,7 +1,7 @@
 :root {
     /* Colores de fondo y texto */
     --color-fondo-primario: #eeeff1;  /* Fondo general de la página */
-    --color-texto-primario: #1c1c1c;        /* Color de texto principal */
+    --color-texto-primario: #151515e1;        /* Color de texto principal */
 
     --color-fondo-secundario: #2b8beb; /* Fondo de secciones/hero (azul) */
     --color-texto-secundario: #080707;       /* Texto sobre el fondo secundario */

@@ -8,11 +8,10 @@
 
 }
 
-ul,/* es una lista */
-ol {/* cada elemento de una lista */
-    list-style: none; /* Para sacarle el estilo de la lista */
+ul,/* Lista no ordenada */
+ol {/* Listas ordenadas*/
+    list-style: none; /* Quita los puntos o números de la lista */
 }
-
 button,/* botones */
 input,/*elementos de ingreso de datos como un textbox */
 textarea,/* areas de texto */
