@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02-shell-y-css-base.md",
+                "file": "Anotaciones (varias).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02-shell-y-css-base"
+              "title": "Anotaciones (varias)"
             }
           },
           {
@@ -49,7 +49,8 @@
               "title": "03-modulos-es"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -111,7 +112,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "61cff7936eb54b73",
@@ -216,10 +218,10 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "830bc68873c73cbb",
+  "active": "5d67e890aa54b08d",
   "lastOpenFiles": [
-    "Anotaciones (varias).md",
     "03-modulos-es.md",
+    "Anotaciones (varias).md",
     "02-shell-y-css-base.md"
   ]
 }

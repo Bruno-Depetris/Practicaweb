@@ -48,7 +48,7 @@ Las variables CSS originan en :root, que es el selector del elemento <html> (la 
 
 ## 5. El origen de Live Server.
 Averigue un poco y el http://127.0.0.1:5500/ se utiliza porque 127.0.0.1 es la direccion de bucle invertido o localhost que apunta al propio ordenador y el puerto 5500 es el predeterminado configurado desde la extencion.
-el origen es http://127.0.0.1:550/
+el origen es http://127.0.0.1:5500/
 
 
 
