@@ -1,25 +1,25 @@
 export class DomService {
 
-    obtenerElemento(selector) {
+    obtenerElemento(elemento) {
         
-        const elemento = document.querySelector(selector);
+        const element = document.querySelector(elemento);
         
-        if (!elemento) {
-            throw new Error(`Elemento no encontrado: ${selector}`);
+        if (!element) {
+            throw new Error(`Elemento no encontrado: ${element}`);
         }
 
-        return elemento;
+        return element;
     }   
 
-    obtenerElementos(selector) {
+    obtenerElementos(elemento) {
     
-        const elementos = document.querySelectorAll(selector);
+        const element = document.querySelectorAll(elemento);
        
-        if (elementos.length === 0) {
-            throw new Error(`Ningun elemento coincide con: ${selector}`);
+        if (element.length === 0) {
+            throw new Error(`Ningun elemento coincide con: ${element}`);
         }
        
-        return Array.from(elementos);
+        return Array.from(element);
   
     }
 
@@ -55,15 +55,14 @@ export class DomService {
     establecerTituloDocumento(titulo){
         // use el by tag name porque solamente hay un tittle y el primer elemento
         // de la coleccion [0]
-        document.getElementsByTagName("title")[0].textContent = titulo;
+        document.title.textContent = titulo;
     }
 
-
     /**
-     * Establece el favicon del documento.
-     * @param {string} direccionIcono - Ruta de la imagen del icono.
-     * @throws {Error} Si la ruta está vacía o no es válida.
-     */
+ * Establece el favicon del documento.
+ * @param {string} direccionIcono - Ruta de la imagen del icono.
+ * @throws {Error} Si la ruta está vacía o no es válida.
+ */
     establecerIconoDocumento(direccionIcono) {
 
         if (direccionIcono == null || direccionIcono.trim() === "") {
@@ -83,7 +82,5 @@ export class DomService {
 
         icono.href = direccionIcono;
     }
-
-
 
 }   

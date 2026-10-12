@@ -50,9 +50,6 @@ Luego recorde todas las veces que use funciones static void en C#, las mismas la
 En resumen: **`static` → se accede mediante la clase; sin `static` → normalmente se accede mediante una instancia**.
 
 
-
-
-
 IMPORTS 
 si hago un import agregar el .js
 #### Conceptos

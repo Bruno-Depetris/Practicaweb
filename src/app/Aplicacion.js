@@ -1,16 +1,17 @@
 
 import { Configuracion } from "../config/Configuracion.js";
-import { DomService } from "../core/DomService.js";
 
 export class Aplicacion {
-
+    constructor(domService){
+        this.domService = domService;
+    }
   //`static` → se accede mediante la clase; 
   // sin `static` → normalmente se accede mediante una instancia 
 
     iniciar() {
-        const dom = new DomService()
-        dom.establecerTituloDocumento(Configuracion.NOMBRE_APLICACION);
-        dom.establecerIconoDocumento(Configuracion.URL_ICONO);
+        this.domService.establecerTituloDocumento(Configuracion.NOMBRE_APLICACION);
+        this.domService.establecerIconoDocumento(Configuracion.URL_ICONO);
+        this.domService.establecerHtml('titulo', "<b>Hola</b>" + Configuracion.NOMBRE_APLICACION)
         console.log("Aplicacion iniciada " + Configuracion.NOMBRE_APLICACION);
 
     }

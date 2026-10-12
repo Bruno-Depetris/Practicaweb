@@ -1,12 +1,21 @@
 
-
-//decido yo que exportar si tuviera muchas clases 
-// solo exporto esta supongo que es lo mismo que hacer public una clase
 export class Configuracion {
 
-    static NOMBRE_APLICACION = "Practica SPA";
-    static URL_API = "https://dummyjson.com";
-    static TIMEOUT_PETICIONES_MS = 5000;
-    static URL_ICONO = "assets/img/icono.png"
+    static get NOMBRE_APLICACION() {
+        return "Practica SPA";
+    }
+
+    static get URL_API() {
+        return "https://dummyjson.com";
+    }
+
+    // Tiempo máximo de espera de una petición antes de considerarla agotada.
+    static get TIMEOUT_PETICIONES_MS() {
+        return 5000;
+    }
+
+    static get URL_ICONO() {
+        return "assets/img/icono.png";
+    }
 
 }
