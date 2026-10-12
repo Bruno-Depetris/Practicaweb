@@ -1,34 +1,30 @@
 export class DomService {
 
-    obtenerElemento(elemento) {
+    obtenerElemento(slector) {
         
-        const element = document.querySelector(elemento);
+        const element = document.querySelector(slector);
         
         if (!element) {
-            throw new Error(`Elemento no encontrado: ${element}`);
+            throw new Error(`Elemento no encontrado: ${slector}`);
         }
 
         return element;
     }   
 
-    obtenerElementos(elemento) {
+    obtenerElementos(slector) {
     
-        const element = document.querySelectorAll(elemento);
-       
-        if (element.length === 0) {
-            throw new Error(`Ningun elemento coincide con: ${element}`);
-        }
-       
+        const element = document.querySelectorAll(slector);
+        
         return Array.from(element);
   
     }
 
     establecerTexto(elemento, texto) {
-        if (document.getElementById(elemento) === null){
+        if (elemento === null){
             throw new Error(`Elemento no encontrado: ${elemento}`);
         }
         
-        document.getElementById(elemento).textContent = texto
+        elemento.textContent = texto;       
         
     }
 
@@ -45,17 +41,16 @@ export class DomService {
      * 
     */
     establecerHtml(elemento, html){
-        if (document.getElementById(elemento) === null) {
+        if (elemento === null) {
             throw new Error(`Elemento no encontrado: ${elemento}`);
         }
-
-        document.getElementById(elemento).innerHTML = html
+        
+        elemento.innerHTML = html;
     }
 
     establecerTituloDocumento(titulo){
-        // use el by tag name porque solamente hay un tittle y el primer elemento
-        // de la coleccion [0]
-        document.title.textContent = titulo;
+       
+        document.title = titulo;
     }
 
     /**
@@ -65,7 +60,7 @@ export class DomService {
  */
     establecerIconoDocumento(direccionIcono) {
 
-        if (direccionIcono == null || direccionIcono.trim() === "") {
+        if (direccionIcono === null || direccionIcono.trim() === "") {
             throw new Error("La ruta del icono no puede estar vacía.");
         }
 

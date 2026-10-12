@@ -9,9 +9,11 @@ export class Aplicacion {
   // sin `static` → normalmente se accede mediante una instancia 
 
     iniciar() {
+
+        this.domService.establecerTexto(this.domService.obtenerElemento("#app"), Configuracion.NOMBRE_APLICACION)
         this.domService.establecerTituloDocumento(Configuracion.NOMBRE_APLICACION);
         this.domService.establecerIconoDocumento(Configuracion.URL_ICONO);
-        this.domService.establecerHtml('titulo', "<b>Hola</b>" + Configuracion.NOMBRE_APLICACION)
+
         console.log("Aplicacion iniciada " + Configuracion.NOMBRE_APLICACION);
 
     }

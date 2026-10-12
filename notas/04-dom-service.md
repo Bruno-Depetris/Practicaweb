@@ -15,5 +15,8 @@ El de riesgo es el INNERHTML porque me permite ingresar bloques enteros de puro 
 
 ## 4. ¿Por qué `Aplicacion` recibe el `DomService` por constructor en lugar de hacer `new DomService()` adentro? Tienes que responder con **un ejemplo concreto**, no con “es mejor práctica”.
 
-Esta no la tengo claro pero creo que es porque como se ejecuta el codigo en el lugar donde hago el import, si ejecuto en el main.js , el cual esta en el index.html entiendo que eso me da acceso a todos los elementos de ese archivo o del lugar donde insancie. 
-Fuera de eso abstraigo las dependencias.
+`Aplicacion` recibe `DomService` por constructor para poder decidir desde afuera qué implementación utilizar.
+Por ejemplo, cuando quiero probar que `Aplicacion` muestra el mensaje de bienvenida, puedo pasarle un `DomService` falso que registre el texto recibido, sin modificar el DOM real.
+
+Si `Aplicacion` creara su propio `DomService` con `new DomService()`, no podría reemplazarlo directamente por el falso desde afuera.
+De esta manera, puedo probar `Aplicacion` sin modificar su código. Solo cambio el objeto que le paso al constructor. Esto es inyección de dependencias, igual que pasar un mock de `IProductoService` a un controller en C#.
